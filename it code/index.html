@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Code</title>
+    <script src="https://kit.fontawesome.com/cbd5e98839.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="./images/1520011697093.jpg">
+</head>
+<body>
+    <div class="overlay-bg" id="overlay-bg"></div>
+    <div class="overlay" id="overlay">
+        <div class="overlay-box">
+            <div class="overlay-head">
+                <a href="#" class="close">
+                    <i onclick="closeForm()" class="fa-solid fa-xmark classic"></i>
+                </a>
+                <img style="border-radius: 15px;" src="./images/1520011697093.jpg" alt="">
+            </div>
+            <div class="overlay-body">
+                <form action="" method="post" class="form-ajax">
+                    <h3>Գրանցվել դասընթացին</h3>
+                    <p>
+                        <select name="id">
+                            <option value="">Ընտրել կուրսը</option>
+                                                    <option value="1">Ծրագրավորում 0-ից դասընթաց</option>
+                                                    <option value="2">JavaScript դասընթաց</option>
+                                                    <option value="3">React.js դասընթաց</option>
+                                                    <option value="4">PHP / Laravel դասընթաց</option>
+                                                    <option value="5">Վեբ ծրագրավորման դասընթաց</option>
+                                                </select>
+                    </p>
+                    <p><input type="text" name="full_name" placeholder="Անուն Ազգանուն"></p>
+                    <p><input type="mail" name="email" placeholder="Էլ․ փոստ"></p>
+                    <p><input type="tel" name="phone" placeholder="Հեռախոսահամար"></p>
+                    <p>
+                        <select name="time">
+                            <option value="">Նախընտրած ժամեր</option>
+                            <option value="Առավոտյան">Առավոտյան</option>
+                            <option value="Ցերեկային">Ցերեկային</option>
+                            <option value="Երեկոյան">Երեկոյան</option>
+                            <option value="Բոլոր ժամերը">Բոլոր ժամերը</option>
+                        </select>
+                    </p>
+                    <p class="radio-option">
+                        <label class="active">
+                            <input type="radio" name="course_type" value="Առկա" checked=""> Առկա
+                        </label>
+                        <label>
+                            <input type="radio" name="course_type" value="Օնլայն"> Օնլայն
+                        </label>
+                    </p>
+                    <div class="form-message"></div>
+                    <button type="submit">Գրանցվել</button>
+                </form>
+            </div>
+        </div>
+    </div>
+      
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </nav>
+    <header>
+        <div class="bool"></div>
+        <div class="container">
+          
+            <div class="header_content">
+                <div class="header_box">
+                    <div class="parent_header_text">
+                        <p>
+                            <strong>Սովորի՛ր</strong> ծրագրավորում
+                            <br>
+                           <strong> Դարձի՛ր</strong> պահանջված մասնագետ
+                        </p>
+                        <p class="nano">
+                            Որակյալ ուսուցում, անվճար պրակտիկա, երաշխավորված աշխատանք։
+                        </p>
+                    </div>
+                    <div class="button_group">
+                        <button class="div" onclick="openForm()">
+                            Սկսե՛լ 
+                        </button>
+                    </div>
+                </div>
+                <div class="header_bo media">
+                    <div class="header_box_img">
+                        <div class="flip-cardh" tabIndex="0">
+                            <div class="flip-card-innerh">
+                              <div class="flip-card-fronth">
+                                <img src="./images/1520011697093.jpg" alt="a">
+                              </div>
+                              <div class="flip-card-backh">
+                                <div class="fbox">
+                                    <p>
+                                        <strong>Կապ մեզ հետ</strong>
+                                    </p>
+                                    <div class="icone_bar">
+                                        <div class="icons">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                        <div class="icone_text">
+                                            <p>+(374)-94-74-14-60</p>
+                                        </div>
+                                    </div>
+                                    <div class="icone_bar">
+                                        <div class="icons">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                        <div class="icone_text">
+                                            <p>+(374)-33-74-14-60</p>
+                                        </div>
+                                    </div>
+                                    <div class="icone_bar">
+                                        <div class="icons">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                        <div class="icone_text">
+                                            <p>itcode@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="icone_bar">
+                                        <div class="icons">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                        <div class="icone_text">
+                                            <p>itcode@mail.ru</p>
+                                        </div>
+                                    </div>
+                                    <div class="icone_bar">
+                                        <div class="icons">
+                                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                        </div>
+                                        <div class="icone_text">
+                                            <p>16 Isahakyan poxoc Yerevan 0025 Армения</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main><hr>
+        <div class="container">
+            <div class="parent_text">
+                <p class="text_one">Ծրագրավորման <strong>Դասընթացներ</strong></p>
+                <p class="text_two">Ծրագրավորման դասընթացներ նախատեսված սկսնակների համար</p>
+            </div>
+            <div class="prent_box">
+                <section>
+                    <div class="row_one_box">
+                        <div class="box">
+                            <div class="icon_parent">
+                                <div class="flip-card" tabIndex="0">
+                                  <div class="flip-card-inner">
+                                      <div class="flip-card-front">
+                                        <i class="fa-brands fa-html5"></i>
+                                      </div>
+                                      <div class="flip-card-back">
+                                        30.000 ֏
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <h2>HTML 5</h2>
+                            <div class="box_button_group">
+                                <button class="div" onclick="openForm()">
+                                    Դիտել
+                                </button>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon_parent">
+                                <div class="flip-card" tabIndex="0">
+                                  <div class="flip-card-inner">
+                                      <div class="flip-card-front">
+                                        <i class="fa-brands fa-css3-alt"></i>
+                                      </div>
+                                      <div class="flip-card-back">
+                                        30.000 ֏
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <h2>CSS 3</h2>
+                            <div class="box_button_group">
+                                <button class="div" onclick="openForm()">
+                                    Դիտել
+                                </button>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon_parent">
+                                <div class="flip-card" tabIndex="0">
+                                  <div class="flip-card-inner">
+                                      <div class="flip-card-front">
+                                        <i class="fa-brands fa-square-js"></i>
+                                      </div>
+                                      <div class="flip-card-back">
+                                        35.000 ֏
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <h2>JAVA SCRIPT</h2>
+                            <div class="box_button_group">
+                                <button class="div" onclick="openForm()">
+                                    Դիտել
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+               <section>
+                 <div class="row_one_box">
+                    <div class="box">
+                        <div class="icon_parent">
+                            <div class="flip-card" tabIndex="0">
+                              <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                    <i class="fa-brands fa-php"></i>
+                                  </div>
+                                  <div class="flip-card-back">
+                                    40.000 ֏
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <h2>PHP</h2>
+                        <div class="box_button_group">
+                            <button class="div" onclick="openForm()">
+                                Դիտել
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box">
+                            <div class="icon_parent">
+                                <div class="flip-card" tabIndex="0">
+                                  <div class="flip-card-inner">
+                                      <div class="flip-card-front">
+                                        <i class="fa-brands fa-laravel"></i>
+                                      </div>
+                                      <div class="flip-card-back">
+                                        40.000 ֏
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                        <h2>LARAVEL</h2>
+                        <div class="box_button_group">
+                            <button class="div" onclick="openForm()">
+                                Դիտել
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon_parent">
+                            <div class="flip-card" tabIndex="0">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                    <i class="fa-brands fa-react"></i>
+                                  </div>
+                                  <div class="flip-card-back">
+                                    40.000 ֏
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <h2>REACT.JS</h2>
+                        <div class=" box_button_group">
+                            <button class="div" onclick="openForm()">
+                                Դիտել
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div class="container">
+            <div class="footer_box_parent">
+                <div class="fbox fmedia">
+                    <div class="img_parent_footer">
+                        <img src="./images/1520011697093.jpg" alt="a">
+                    </div>
+                </div>
+
+                <div class="fbox">
+                    <p>
+                        <strong>Ընկերություն</strong>
+                    </p>
+                    <div class="icone_textf">
+                        <p>Դասընթացներ</p>
+                    </div>
+                    <div class="icone_textf">
+                        <p>Առավելություններ</p>
+                    </div>
+                    <div class="icone_textf">
+                        <p>Թրեյներներ</p>
+                    </div>
+                    <div class="icone_textf">
+                        <p>Մեր մասին
+                        </p>
+                    </div>
+                </div>
+                <div class="fbox">
+                    <p>
+                        <strong>Կապ մեզ հետ</strong>
+                    </p>
+                    <div class="icone_bar">
+                        <div class="icons">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="icone_text">
+                            <p>+(374)-94-74-14-60</p>
+                        </div>
+                    </div>
+                    <div class="icone_bar">
+                        <div class="icons">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="icone_text">
+                            <p>+(374)-33-74-14-60</p>
+                        </div>
+                    </div>
+                    <div class="icone_bar">
+                        <div class="icons">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="icone_text">
+                            <p>itcode@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="icone_bar">
+                        <div class="icons">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="icone_text">
+                            <p>itcode@mail.ru</p>
+                        </div>
+                    </div>
+                    <div class="icone_bar">
+                        <div class="icons">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="icone_text">
+                            <p>16 Isahakyan poxoc Yerevan 0025 Армения</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
